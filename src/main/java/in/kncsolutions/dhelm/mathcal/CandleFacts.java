@@ -1,5 +1,5 @@
 /**
- *Copyright 2017 Pallav Nandi Chaudhuri@Knc Solutions Private Limited
+ *Copyright 2018 Pallav Nandi Chaudhuri@Knc Solutions Private Limited
 
   *Licensed under the Apache License, Version 2.0 (the "License");
   *you may not use this file except in compliance with the License.
@@ -27,6 +27,7 @@
  *@param cl : List of closing/low prices where last element is the latest data.
  *@param numPeriods: Number of previous periods going back from the latest period to past over which the average  have to be calculated. 
  *@return : returns the average length over the specified number of periods. 
+ *@throws DataException if sufficient data not available.
  */
  public static double getAverageLength(List<Double> oh, List<Double> cl , int numPeriods)throws DataException{
    double avg_length=0;
@@ -43,29 +44,29 @@
  }
  /**
  *@param o : the list which is to be reversed
- @return The reversed list
+ *@return The reversed list
  */
  public static List<Double> reverseDouble(List<Double> o){
-   List<Double> r=new <Double>ArrayList();
+   List<Double> r=new ArrayList<Double>();
    for(int i=o.size()-1;i>=0;i--)r.add(o.get(i));
    return r;
  }
  /**
  *@param o : the list which is to be reversed
- @return The reversed list
+ *@return The reversed list
  */
  public static List<Long> reverseLong(List<Long> o){
-   List<Long> r=new <Long>ArrayList();
+   List<Long> r=new ArrayList<Long>();
    for(int i=o.size()-1;i>=0;i--)r.add(o.get(i));
    return r;
  }
 
 /**
  *@param o : the list which is to be reversed
- @return The reversed list
+ *@return The reversed list
  */
  public static List<String> reverseString(List<String> o){
-   List<String> r=new <String>ArrayList();
+   List<String> r=new ArrayList<String>();
    for(int i=o.size()-1;i>=0;i--)r.add(o.get(i));
    return r;
  }

@@ -1,5 +1,5 @@
 /**
- *Copyright 2017 Pallav Nandi Chaudhuri@Knc Solutions Private Limited
+ *Copyright 2018 Pallav Nandi Chaudhuri@Knc Solutions Private Limited
 
   *Licensed under the Apache License, Version 2.0 (the "License");
   *you may not use this file except in compliance with the License.
@@ -28,7 +28,7 @@
   *@return the reverse list is returned.
   */ 
   public static List<Double> reverse(List<Double> input){
-    List<Double> output=new  <Double>ArrayList();
+    List<Double> output=new  ArrayList<Double>();
 	for(int i=input.size()-1;i>=0;i--){
 	  output.add(input.get(i));
 	}
@@ -66,9 +66,8 @@
     }
        return trendline;
     }
-     /**
+ /**
   *@param data: list of y values.
-  *@param np: range of x starting from 1.
   *@return returns the parameters of line in terms of an array of size two where the first element is the slope in degrees and second element is the y-intercept.
   */
   public static double[] ComputeTrendVolume(List<Long>data) {
@@ -99,9 +98,9 @@
        return trendline;
     }
 
-	/**
+/**
   *@param data: list of y values.
-  *@param data: list of x values.
+  *@param dataX: list of x values.
   *@return returns the parameters of line in terms of an array of size two where the first element is the slope in degrees and second element is the y-intercept.
   */
 	public static double[] ComputeTrendLine(List<Double>data,List<Integer>dataX) {
@@ -130,7 +129,7 @@
     }
        return trendline;
     }
-    /**
+  /**
   *@param points: x-y cordinates of the points of the line for which trend have to be calculated.  
   *@return returns the parameters of line in terms of an array of size two where the first element is the slope in degrees and second element is the y-intercept.
   */

@@ -1,5 +1,5 @@
 /**
-*Copyright 2017 Pallav Nandi Chaudhuri@Knc Solutions Private Limited
+*Copyright 2018 Pallav Nandi Chaudhuri@Knc Solutions Private Limited
 
 *Licensed under the Apache License, Version 2.0 (the "License");
 *you may not use this file except in compliance with the License.
@@ -26,19 +26,19 @@ import java.text.ParseException;
 *
 */
 public class WeeklyData{
-public List<Double>open=new <Double>ArrayList();
-public List<Double>high=new <Double>ArrayList();
-public List<Double>low=new <Double>ArrayList();
-public List<Double>close=new <Double>ArrayList();
-public List<String>date=new <String>ArrayList();
-public List<Long>volume=new <Double>ArrayList();
-private List<Double>dopen=new <Double>ArrayList();
-private List<Double>dhigh=new <Double>ArrayList();
-private List<Double>dlow=new <Double>ArrayList();
-private List<Double>dclose=new <Double>ArrayList(); 
-private List<Long>dvolume=new <Long>ArrayList();
-private List<String>ddate=new <String>ArrayList();
-private List<Integer>day=new<Integer>ArrayList();
+public  List<Double>   open=  new ArrayList<Double>();
+public  List<Double>   high=  new ArrayList<Double>();
+public  List<Double>   low=   new ArrayList<Double>();
+public  List<Double>   close= new ArrayList<Double>();
+public  List<String>   date=  new ArrayList<String>();
+public  List<Long>     volume= new ArrayList<Long>();
+private List<Double>  dopen=  new ArrayList<Double>();
+private List<Double>  dhigh=  new ArrayList<Double>();
+private List<Double>  dlow=   new ArrayList<Double>();
+private List<Double>  dclose= new ArrayList<Double>(); 
+private List<Long>    dvolume=new ArrayList<Long>();
+private List<String>  ddate=  new ArrayList<String>();
+private List<Integer> day=    new ArrayList<Integer>();
 /**
 *@param o : list of opening prices on daily basis where first item is the latest data. 
 *@param h : list of high prices on daily basis where first item is the latest data.
